@@ -9,18 +9,35 @@ body {
     color: #333;
   }
 
-  .heading{
-        display: flex;
-          flex-direction: column;
-          align-items: center;
-          background-color: rgba(0, 0, 0, 0.85);
-  }
+    .heading {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.85);
+      padding: 20px;
+    }
+  
+    .logo {
+      width: 50px;
+      height: auto;
+      margin-right: 10px;
+      background-color: rgba(0, 0, 0, 0.85);
+    }
 
-  h1{
-    font-size: 44px;
-    font-weight: bold;
-    color: white;
-  }
+    .heading img {
+      margin:0 10px;
+      height:50px;
+      border-radius:50%
+    }
+  
+    .heading h1 {
+      font-size: 44px;
+      font-weight: bold;
+      font-family: "Playfair Display", serif;
+      font-optical-sizing: auto;
+      color: white;
+      margin: 0;
+    }
 
   p{
         color: white;
@@ -29,6 +46,7 @@ body {
         align-items: center;
         flex-direction: column;
         margin-top: 50px;
+        font-family: "Playfair Display", serif;
       }
   
   .container {
