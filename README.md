@@ -45,7 +45,7 @@ While Let's Mix offers a robust and user-friendly experience, there is always ro
 To run Let's Mix locally on your machine, follow these steps:
 
 1. Clone the repository to your local machine.
-git clone https://github.com/your-username/lets-mix.git
+git clone https:https://github.com/Fardeeeeen/Lets-Mix.git
 
 markdown
 Copy code
@@ -62,5 +62,5 @@ Copy code
 4. Open your web browser and navigate to http://localhost:3000.
 
 <strong>📷 Preview</strong>
-<img src = "/images/lets mix.png" alt = "homepage">
-<img src = "/images/lets mix 2.png" alt = "homepage2">
+<img src = "https://github.com/Fardeeeeen/Lets-Mix/blob/main/lets%20mix.png" alt = "homepage">
+<img src = "https://github.com/Fardeeeeen/Lets-Mix/blob/main/lets%20mix%202.png" alt = "homepage2">
