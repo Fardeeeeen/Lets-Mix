@@ -1,12 +1,18 @@
 import path from 'path';
 import express from "express";
 import axios from "axios";
+import { fileURLToPath } from 'url'; 
 
 const app = express();
 const port = 3000;
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename);
+const viewsPath = path.join(__dirname, '..', 'Client', 'Views');
+const publicPath = path.join(__dirname, '..', 'Client','public');
 
 app.set('view engine', 'ejs');
-app.use(express.static('public'));
+app.use(express.static(publicPath));
+app.set('views', viewsPath);
 
 app.get('/', async (req, res) => {
   try {
@@ -23,10 +29,10 @@ app.get('/', async (req, res) => {
     if (response.data.drinks) {
       // If drinks are available, display the first one
       const cocktail = response.data.drinks[0];
-      res.render('index', { cocktail });
+      res.render('index.ejs', { cocktail });
     } else {
       // If no drinks are found, display a message
-      res.render('index', { notFound: true });
+      res.render('index.ejs', { notFound: true });
     }
   } catch (error) {
     console.error('Error fetching data from the API:', error.message);
