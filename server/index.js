@@ -7,8 +7,8 @@ const app = express();
 const port = 3000;
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename);
-const viewsPath = path.join(__dirname, '..', 'Client', 'Views');
-const publicPath = path.join(__dirname, '..', 'Client','public');
+const viewsPath = path.join(__dirname, '..', 'client', 'views');
+const publicPath = path.join(__dirname, '..', 'client','public');
 
 app.set('view engine', 'ejs');
 app.use(express.static(publicPath));
